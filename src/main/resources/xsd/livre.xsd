@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://sunubiblio.sn/soap"
+           xmlns:tns="http://sunubiblio.sn/soap"
+           elementFormDefault="qualified">
+
+    <!-- Ajouter un Livre -->
+    <xs:element name="AjouterLivreRequest">
+    
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titre" type="xs:string"/>
+                <xs:element name="auteur" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="AjouterLivreResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long"/>
+                <xs:element name="titre" type="xs:string"/>
+                <xs:element name="auteur" type="xs:string"/>
+                <xs:element name="disponible" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Modifier un Livre -->
+    <xs:element name="ModifierLivreRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long"/>
+                <xs:element name="titre" type="xs:string"/>
+                <xs:element name="auteur" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="ModifierLivreResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Supprimer un Livre -->
+    <xs:element name="SupprimerLivreRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="SupprimerLivreResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Prêter un Livre -->
+    <xs:element name="PreterLivreRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="livreId" type="xs:long"/>
+                <xs:element name="nomClient" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="PreterLivreResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Retourner un Livre -->
+    <xs:element name="RetournerLivreRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="livreId" type="xs:long"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="RetournerLivreResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="message" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

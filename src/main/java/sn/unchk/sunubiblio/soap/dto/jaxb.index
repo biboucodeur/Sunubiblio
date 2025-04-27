@@ -1,0 +1,10 @@
+AjouterLivreRequest
+AjouterLivreResponse
+ModifierLivreRequest
+ModifierLivreResponse
+SupprimerLivreRequest
+SupprimerLivreResponse
+PreterLivreRequest
+PreterLivreResponse
+RetournerLivreRequest
+RetournerLivreResponse
