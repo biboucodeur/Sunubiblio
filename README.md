@@ -53,7 +53,7 @@ SunuBiblio est une application Spring Boot qui permet :
 
 ```bash
 # Cloner le projet
-git clone https://github.com/votre-utilisateur/sunubiblio.git
+git clone https://github.com/biboucodeur/sunubiblio.git
 
 # Aller dans le dossier
 cd sunubiblio
