@@ -26,7 +26,7 @@ SunuBiblio est une application Spring Boot qui permet :
 - `GET /api/livres/{id}` ➔ Détail d’un livre
 - `GET /api/livres/disponibles` ➔ Liste des livres disponibles (non prêtés, non réservés)
 - `POST /api/reservations` ➔ Réserver un livre
-- `GET api//reservations/{id}` ➔ Consulter une réservation
+- `GET api/reservations/{id}` ➔ Consulter une réservation
 
 ### ✅ API SOAP (Gestion interne)
 - `AjouterLivre(Livre livre)` ➔ Ajouter un livre
